@@ -1,0 +1,17 @@
+execute:	when you fork new process it takes a new pid instead of occupying a previous empty pid.
+
+		It should occupy the unused pid because we have limited memory.
+
+
+terminate:	I cannot terminate console it does not work. It still keeps on printing new line.
+
+		Terminating console should work. Console is like windows and P3, P4 like text editor, calculator. When we terminate console 		everything should terminate but it doesn't.
+
+
+Ageing:		Using the concept of Dynamic age. Have priorities of each child defined as the same as the parent when forking, i.e.= 0. Every 		round I am adding the priorities to age and plus 1 to all alive non-running processes.
+
+
+Priority: 	this is better than round robin scheduling since in round robin the processes are run randomly. Suppose we have facebook open 		on our phone and someone is calling us. A voice call should have a very high priority and we should get that call while running 		anything else. Hence we need a priority based scheduling.
+
+
+Timer(ire):	is currently 1 sec same as lab sheet. But should be much less. When we are working on text editor and need to switch to 		browser, the switch should be as quick as it seems to be running concurrently.
